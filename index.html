@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <div class="menu-bar">
+        <button class="home-button" onclick="goTopage('index.html')">
+            Home
+        </button>
+        <button class="projects-button" onclick="goTopage('projects.html')">
+            Projects
+        </button>
+        <button class="about-button" onclick="goTopage('contact.html')">
+            About
+        </button>
+    </div>
+
+    <div>
+        <h1 id="name">
+            <strong id="rgb">Hi</strong> &#128075;, I'm Lucas De Medeiros
+        </h1>
+        <p id="info">
+            Student And Aspiring Software Engineer
+        </p>
+        <img src="images/header.png" id="header-image">
+    </div>
+
+    <div id="particles-js">
+
+    </div>
+
+  
+  <div id="popup" class="popup">
+    <span class="close" onclick="closePopup()">&times;</span>
+    <p>Welcome to my page! Feel free to check out more about me and my projects &#128522;
+    </p>
+  </div>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+body {
+  margin: 0;
+  background-color: rgb(0, 1, 25);
+  font-family: "__inter_20b187", "__inter_Fallback_20b187", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.menu-bar {
+  background: radial-gradient(crimson, blue, magenta);
+  background-size: 2000px 2000px;
+  animation: gradientAnimation 20s infinite linear;
+  text-align: center;
+  top: 0;
+  padding: 4px;
+  width: 100%;
+  position: fixed;
+}
+
+.home-button,
+.projects-button,
+.about-button {
+  background-color: transparent;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 85px;
+}
+
+.home-button:hover,
+.projects-button:hover,
+.about-button:hover {
+  background-color: rgba(255, 255, 255, 0.271);
+  text-decoration: underline;
+}
+
+#name {
+  display: inline block;
+  position: fixed;
+  top: 200px;
+  left: 130px;
+  font-size: 58px;
+  color: white;
+}
+
+#rgb {
+  position: fixed;
+  top: 239px;
+  left: 60px;
+  font-size: 58px;
+  background: -moz-radial-gradient(crimson, blue, magenta);
+  background-size: 200px 200px;
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+  animation: gradientAnimation 5s infinite linear;
+}
+
+#info {
+  color: white;
+  font-weight: 120;
+  position: fixed;
+  font-size: 25px;
+  top: 285px;
+  left: 230px;
+}
+
+#header-image {
+  position: fixed;
+  max-width: 700px;
+  height: auto;
+  margin-left: 750px;
+  margin-top: 70px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+
+  25% {
+    background-position: 0% 100%;
+  }
+
+  50% {
+    background-position: 100% 100%;
+  }
+
+  75% {
+    background-position: 100% 0%;
+  }
+
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.popup {
+  display: none;
+  font-weight: 150;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(44, 0, 121, 0.619);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  max-width: 293px;
+  text-align: center;
+}
+
+.popup p {
+  margin: 0;
+}
+
+.close {
+  position: absolute;
+  top: -4px;
+  right: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: red;
+}
+
+/* Styles for phones */
+@media only screen and (max-width: 600px) {
+
+
+  .menu-bar {
+    background: -moz-radial-gradient(crimson, blue, magenta);
+    background-size: 2000px 2000px;
+    animation: gradientAnimation 20s infinite linear;
+    text-align: center;
+    top: 0%;
+    padding: 1%;
+    width: 100%;
+    position: fixed;
+    
+
+  }
+
+  .home-button,
+  .projects-button,
+  .about-button {
+    background-color: transparent;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 12px;
+
+  }
+
+  .home-button:hover,
+  .projects-button:hover,
+  .about-button:hover {
+    background-color: rgba(255, 255, 255, 0.271);
+    text-decoration: underline;
+  }
+
+  #rgb {
+    position: fixed;
+    top: 19.5%;
+    left: 5%;
+    font-size: 3.80rem;
+    
+}
+
+  #name {
+    top: 24%;
+    left: 6.5%;
+    font-size: 1.85rem;
+    color: white;
+    position: fixed;
+  }
+
+  #info {
+    top: 28.5%;
+    left: 17%;
+    font-size: 1rem;
+  }
+
+  #header-image {
+    position: fixed;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 65%;
+    width: 100%;
+
+  }
+
+  .popup {
+    display: fixed;
+    top: 8%;
+    bottom: auto;
+    left: 55%;
+    max-width: 35%;
+    font-size: 0.9rem;
+    display: block;
+    
+  } 
+ 
+}
